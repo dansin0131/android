@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageButton
+        android:layout_gravity="right"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/add"
+        android:background="@null"
+        />
+
     <CalendarView
         android:id="@+id/calendar"
         android:layout_width="match_parent"
@@ -13,4 +25,45 @@
         android:layout_weight="1"
         android:maxDate="12/31/2038"
         android:minDate="01/01/2018"></CalendarView>
+
+    <TableLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/line_2"/>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/tab1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:src="@mipmap/tab_1"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/tab2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:src="@mipmap/tab_2"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/tab3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:src="@mipmap/tab_3"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+    </TableLayout>
 </LinearLayout>
