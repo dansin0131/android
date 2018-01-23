@@ -21,6 +21,7 @@ public class sports extends Activity{
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_sports);
+
         TextView tv = (TextView)findViewById(R.id.place);
         String str = tv.getText().toString();
         SpannableStringBuilder ssb = new SpannableStringBuilder(str);
